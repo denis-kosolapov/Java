@@ -1,28 +1,25 @@
-package Access;
+package Test;
 
 public class Test {
-    int a;
-    public int b;
-    private int c;
-
-    void setc (int i) {
-        c = i;
+    int a, b;
+    Test (int i, int j) {
+        a = i;
+        b = j;
     }
 
-    int getc () {
-        return c;
+    boolean equals (Test o) {
+        if (o.a == a && o.b == b) return true;
+        else return false;
     }
 }
 
-class AccessTest {
-    public static void main (String args[]) {
-        Test ob = new Test();
+class PassOb {
+    public static void main (String[] args) {
+        Test ob1 = new Test(100, 22);
+        Test ob2 = new Test(100, 22);
+        Test ob3 = new Test(-1, -1);
 
-        ob.a = 10;
-        ob.b = 20;
-        //ob.c = 100 //ОШИБКА!
-
-        ob.setc(100);
-        System.out.println("a, b, and c: " + ob.a + " " + ob.b + " " + ob.getc());
+        System.out.println(ob1.equals(ob2));
+        System.out.println(ob1.equals(ob3));
     }
 }
