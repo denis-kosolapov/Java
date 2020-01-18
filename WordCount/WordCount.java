@@ -64,7 +64,7 @@ public class WordCount {
             }
         }
 
-        System.out.println("Вобшем я нащитал " + k);
+        System.out.println("Вобшем я насчитал " + k);
         splitter(str1);
     }
 }
