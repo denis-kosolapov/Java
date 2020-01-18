@@ -53,7 +53,7 @@ public class WordCount {
     }
 
     public static void main(String[] args) {
-        String str1 = "vasya alkash konchenuy yOy buhae mnogo OOOOOO";
+        String str1 = "Здесь пишем какой-нибудь текст для подсчета слов, которые заканчиваются той же буквой, что и начинаются";
         String[] s = recut(str1, " ");
 
         int k = 0; // сюда количество нужных слов
